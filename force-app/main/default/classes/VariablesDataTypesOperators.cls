@@ -102,7 +102,17 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        final Boolean isEven = true;
+        final Boolean isOdd = false;
+
+        integer remainder;
+        remainder = Math.mod(num, 2);
+
+        if (remainder == 0) {
+            return isEven;
+        }
+ 
+        return isOdd; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -113,7 +123,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Boolean isNumPos = false;
+        if (num >= 0) {
+            isNumPos = true;
+        }
+        return isNumPos; // Replace null with the variable you used to store the result
     }
 
     /**
